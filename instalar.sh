@@ -234,7 +234,7 @@ if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") 
    inst_components
    install_hosts
    wget -O $HOME/credits https://raw.githubusercontent.com/martincho247/ADM-ULTIMATE-NEW-FREE/master/credits &> /dev/null
-   wget -O /bin/versao_script https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Install/versaoatt &> /dev/null
+   wget -O /bin/versao_script https://raw.githubusercontent.com/martincho247/ADM-ULTIMATE-NEW-FREE/master/Install/versaoatt &> /dev/null
    tput cuu1 && tput dl1
    echo "$Key" > ${SCPdir}/key.txt
    [[ -d ${SCPinstal} ]] && rm -rf ${SCPinstal}   
