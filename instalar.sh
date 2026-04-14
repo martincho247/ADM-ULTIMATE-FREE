@@ -6,7 +6,7 @@ SCPidioma="${SCPdir}/idioma"
 SCPusr="${SCPdir}/ger-user"
 SCPfrm="/etc/ger-frm"
 SCPinst="/etc/ger-inst"
-# Ruta del repositorio base64 -d (https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/request)
+# Ruta del repositorio base64 -d (https://raw.githubusercontent.com/martincho247/ADM-ULTIMATE-NEW-FREE/master/request)
 SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FBQUFBRVhRT1N5SXBOMkpaMGVoVVEvQURNLVVMVElNQVRFLU5FVy1GUkVFL21hc3Rlci9yZXF1ZXN0"
 SUB_DOM='base64 -d'
 [[ $(dpkg --get-selections|grep -w "gawk"|head -1) ]] || apt-get install gawk -y &>/dev/null
@@ -176,7 +176,7 @@ for host in ${_host[@]}; do
 done
 }
 
-# Instalação NEW-ULTIMATE
+# Instalaï¿½ï¿½o NEW-ULTIMATE
 fun_ip
 wget -O /usr/bin/trans http://git.io/trans &> /dev/null
 clear
@@ -233,7 +233,7 @@ if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") 
    msg -azu "AGUARDE..."
    inst_components
    install_hosts
-   wget -O $HOME/credits https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/credits &> /dev/null
+   wget -O $HOME/credits https://raw.githubusercontent.com/martincho247/ADM-ULTIMATE-NEW-FREE/master/credits &> /dev/null
    wget -O /bin/versao_script https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Install/versaoatt &> /dev/null
    tput cuu1 && tput dl1
    echo "$Key" > ${SCPdir}/key.txt
